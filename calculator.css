@@ -1,0 +1,74 @@
+/* Set a beautiful background */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #b9236e, #e0e0e0);
+    z-index: -1;
+  }
+  
+  .calculator {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    width: 300px;
+    border:4px solid black;
+  }
+  
+  #display {
+    width: 100%;
+    height: 50px;
+    background: rgb(182, 197, 49);
+    border: none;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba( 0,  0,  0 ,0.3);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: rgba(255, 255, 255, 0.58);
+  }
+  
+  .equal {
+    grid-column: span 2;
+    background: #ff7675;
+  }
+  
+  .equal:hover {
+    background: #cbff6b;
+  }
+  
+  
